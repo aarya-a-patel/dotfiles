@@ -25,3 +25,8 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+# set XDG_CONFIG_HOME
+XDG_CONFIG_HOME="$HOME/.config"
+. "$HOME/.rye/env"
+. "$HOME/.cargo/env"

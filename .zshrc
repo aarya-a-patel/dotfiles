@@ -16,6 +16,8 @@ fi
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+plugins=(docker docker-compose)
+
 eval "$(starship init zsh)"
 
 setopt auto_cd
@@ -48,7 +50,16 @@ alias v='nvim'
 alias vi='nvim'
 alias vim'nvim'
 
+alias bat='cat'
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 
+. "$HOME/.cargo/env"
+
+autoload -U compinit && compinit
+
+alias cat='batcat'
+
+eval "$(direnv hook zsh)"

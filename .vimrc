@@ -14,6 +14,7 @@ Plug 'srcery-colors/srcery-vim'
 Plug 'itchyny/lightline.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'dense-analysis/ale'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
